@@ -14,6 +14,8 @@ const sendWelcomeEmail = (email, name) => {
         console.log('email sent')
     }).catch((error) => {
         console.log('error', error)
+    }).finally(() => {
+        console.log('email finished')
     })
 }
 
